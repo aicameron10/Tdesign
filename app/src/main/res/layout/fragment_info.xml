@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/linebg"
+    android:orientation="vertical"
+    android:padding="5dp" >
+
+    <requestFocus />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="442dp"
+            android:orientation="vertical" >
+            <TextView
+                android:id="@+id/heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Our Quality"
+                android:gravity="center"
+                android:textSize="36sp"
+                android:textColor="#fff"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                />
+
+            
+            
+             <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 android:layout_below="@+id/heading"
+                 android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:text="Toast.It being a quality driven business, lays massive emphasis on the quality of our garments.
+There are processes laid out at all stages of production of our garments to ensure
+high standards in quality."
+                 android:textColor="#fff"
+                 android:layout_marginBottom="5dp"
+                android:textSize="24sp"/>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView1"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:text="A lot of emphasis is laid on the pattern, strength and fit of our garments.
+We ensure that the fabric (PolyCotton, Polyester) is of the finest quality and our
+stitching quality is inspected by our in line supervisors during the production stage. "
+                android:textColor="#fff"
+                android:layout_marginBottom="5dp"
+                android:textSize="24sp"/>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView2"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:text="Our printing process is then closesly monitored ensuring the best fit and
+print for our customers"
+                android:textColor="#fff"
+                android:layout_marginBottom="5dp"
+                android:textSize="24sp"/>
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView3"
+                android:background="@drawable/quality"/>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

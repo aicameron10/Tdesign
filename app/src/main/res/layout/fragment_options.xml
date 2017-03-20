@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/linebg"
+    android:orientation="vertical"
+    android:padding="5dp" >
+
+    <requestFocus />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="5dp">
+            <TextView
+                android:id="@+id/heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Design Options"
+                android:gravity="center"
+                android:textSize="36sp"
+                android:textColor="#fff"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                />
+
+
+            <RadioGroup
+                android:id="@+id/choiceRadioGroup1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/heading"
+                android:orientation="vertical"
+                >
+
+                <RadioButton
+                    android:id="@+id/RadioButton1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:gravity="top"
+                    android:paddingTop="2dp"
+                    android:buttonTint="@color/textColour"
+                    android:text="Polyester"
+                    android:textSize="22sp"
+                    android:layout_marginBottom="2dp"
+                    />
+
+
+                <RadioButton
+                    android:id="@+id/RadioButton2"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/white"
+                    android:buttonTint="@color/textColour"
+                    android:textSize="22sp"
+                    android:paddingTop="2dp"
+                    android:gravity="top"
+                    android:layout_height="wrap_content"
+                    android:text="PolyCotton"
+
+                    />
+
+                <RadioButton
+                    android:id="@+id/RadioButton3"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/white"
+                    android:buttonTint="@color/textColour"
+                    android:textSize="22sp"
+                    android:paddingTop="2dp"
+                    android:gravity="top"
+                    android:layout_height="wrap_content"
+                    android:text="Cotton"
+
+                    />
+
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_below="@+id/choiceRadioGroup1"
+                android:id="@+id/lin1">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Colour"
+                    android:textColor="@color/white"
+                    android:layout_weight="0.4"
+                    android:id="@+id/colour"
+                    android:textSize="26sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Size"
+                    android:id="@+id/size"
+                    android:layout_weight="0.5"
+                    android:textColor="@color/white"
+                    android:textSize="26sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/lin2"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_below="@+id/lin1">
+                <Spinner
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:id="@+id/addcolour"
+                    android:textColor="@color/textColour"
+                    android:background="@drawable/dropdown"
+                    android:layout_weight="0.5"
+                    android:layout_marginRight="2dp"
+                    android:popupTheme="@android:style/ThemeOverlay.Material.Dark"
+                    />
+                <Spinner
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:id="@+id/addsize"
+                    android:textColor="@color/textColour"
+                    android:layout_marginLeft="2dp"
+                    android:popupTheme="@android:style/ThemeOverlay.Material.Dark"
+                    android:background="@drawable/dropdown"
+                    android:layout_weight="0.5"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:id="@+id/label1"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/lin2"
+                android:text="label1"
+                android:gravity="center"
+                android:layout_marginBottom="5dp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_below="@+id/label1"
+                android:layout_marginTop="10dp"
+                android:id="@+id/sizechart1"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:id="@+id/label2"
+                android:gravity="center"
+                android:layout_below="@+id/sizechart1"
+                android:text="label2"
+                android:layout_marginBottom="5dp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/sizechart2"
+                android:layout_below="@+id/label2"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:id="@+id/txtmeasure"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/sizechart2"
+                android:text="Measurements"
+                android:layout_marginBottom="100dp"/>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/menu1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingRight="16dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        fab:menu_labels_ellipsize="end"
+        fab:menu_labels_singleLine="true"
+        fab:menu_colorNormal="#f68b3c"
+        fab:menu_colorPressed="#f68b3c"
+        fab:menu_colorRipple="#f68b3c"
+        fab:menu_backgroundColor="#59333333"
+        fab:menu_fab_label=""
+        fab:menu_icon="@drawable/ic_action_design_button"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+    </com.github.clans.fab.FloatingActionMenu>
+</RelativeLayout>

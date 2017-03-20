@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/linebg"
+    android:orientation="vertical"
+    android:padding="5dp" >
+
+    <requestFocus />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="442dp"
+            android:orientation="vertical" >
+            <TextView
+                android:id="@+id/heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contact Us"
+                android:gravity="center"
+                android:textSize="36sp"
+                android:textColor="#fff"
+                android:layout_marginTop="5dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                />
+
+            
+            
+             <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 android:layout_below="@+id/heading"
+                 android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:text="CUSTOMER SERVICE"
+                 android:textColor="#fff"
+                android:textSize="32sp"/>
+
+            <TextView
+                android:id="@+id/txtcustomer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView1"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:text=""
+                android:textColor="#fff"
+                android:background="@drawable/rect_text_edit_border"
+                android:textSize="30sp"
+                android:paddingLeft="5dp"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="15dp"
+                android:id="@+id/lin4"
+                android:layout_below="@+id/txtcustomer">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="1dp"
+                android:id="@+id/lin1"
+                android:layout_below="@+id/txtcustomer">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/toastit"
+                    android:id="@+id/web"
+                     android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:text="www.toastit.co.za"
+                    android:textSize="26sp"
+                    android:id="@+id/txtweb"
+                    android:layout_gravity="center"
+                    android:textColor="@color/textColour"
+                    />
+
+
+
+</LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="1dp"
+                    android:id="@+id/lin6"
+                    android:layout_below="@+id/txtcustomer">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:background="@drawable/call_button"
+                        android:id="@+id/call"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:text="083 200 8869"
+                        android:textSize="26sp"
+                        android:id="@+id/txtcall"
+                        android:layout_gravity="center"
+                        android:textColor="@color/textColour"
+                        />
+
+
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="15dp"
+                android:id="@+id/lin5"
+                android:layout_below="@+id/lin4">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="1dp"
+                    android:id="@+id/lin2"
+                    android:layout_below="@+id/txtcustomer">
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:background="@drawable/email_button"
+                        android:id="@+id/email"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:text="Email"
+                        android:textSize="26sp"
+                        android:id="@+id/txtemail"
+                        android:layout_gravity="center"
+                        android:textColor="@color/textColour"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="1dp"
+                    android:id="@+id/lin3"
+                    android:layout_below="@+id/txtcustomer">
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:background="@drawable/store_location_pin_1"
+                        android:id="@+id/directions"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="5dp"
+                        android:text="Directions"
+                        android:textSize="26sp"
+                        android:id="@+id/txtdirections"
+                        android:layout_gravity="center"
+                        android:textColor="@color/textColour"
+                        />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            
+              <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/lin5"
+                android:text="STORE OPENING HOURS"
+                  android:textColor="#fff"
+                android:textSize="32sp" />
+
+            <TextView
+                android:id="@+id/txtopen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/textView2"
+                android:background="@drawable/rect_text_edit_border"
+                android:text=""
+                android:textColor="#fff"
+                android:textSize="30sp"
+                android:paddingLeft="5dp"
+                />
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

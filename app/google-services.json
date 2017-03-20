@@ -1,0 +1,38 @@
+{
+  "project_info": {
+    "project_number": "706851445473",
+    "project_id": "firebase-toastit"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:706851445473:android:7aac8602cbd36b68",
+        "android_client_info": {
+          "package_name": "com.mydeliveries.toastit"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDCpEBd6i24ftEUhk9BbQJbk-et07UhdFk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 2,
+          "analytics_property": {
+            "tracking_id": "UA-88824994-1"
+          }
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

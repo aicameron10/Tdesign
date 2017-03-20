@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/form"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:background="@color/ColorPrimary">
+    <com.mydeliveries.toastit.util.MultiColorPicker
+        android:id="@+id/multiColorPicker"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Type your favourite quote"
+        android:layout_below="@+id/multiColorPicker"
+        android:textColor="@color/textColour"
+        android:id="@+id/txtquote"
+        android:layout_marginBottom="5dp"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:id="@+id/texttype"
+        android:gravity="center_vertical|top"
+        android:inputType="textMultiLine"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:textColor="@color/white"
+        android:background="@drawable/rect_text_edit_border"
+        android:layout_below="@+id/txtquote"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose a font:"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/texttype"
+        android:textColor="@color/textColour"
+        android:id="@+id/txtfont"/>
+
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/horiscroll"
+        android:layout_below="@+id/txtfont"
+
+        android:background="@color/ColorPrimary"
+        android:scrollbars="none"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp">
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:id="@+id/fonts">
+
+
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+
+</RelativeLayout>

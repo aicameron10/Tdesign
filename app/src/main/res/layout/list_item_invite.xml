@@ -1,0 +1,28 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/inviteEmail"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:textColor="#ffffff"
+        android:clickable="false" />
+
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="18sp"
+        android:textColor="#ffffff"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/checkBoxInvite"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="10dp"
+        android:focusable="false"
+        android:buttonTint="@color/white"
+        android:focusableInTouchMode="false" />
+
+</RelativeLayout>

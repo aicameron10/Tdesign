@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/linebg"
+    android:orientation="vertical">
+
+    <requestFocus />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="800dp"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="Feedback"
+                android:textColor="#fff"
+                android:textSize="36sp" />
+
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/heading"
+                android:text="Name:"
+                android:textColor="@color/textColour"
+                android:textSize="28sp" />
+
+            <EditText
+                android:id="@+id/fb_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/textView1"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/rect_text_edit_border"
+                android:ems="10"
+                android:minHeight="40dp"
+                android:paddingLeft="5dp" />
+
+            <Button
+                android:id="@+id/fb_send"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fb_comments"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="43dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/rect_text_edit_border_red_fill"
+                android:text="Send"
+                android:textAllCaps="false"
+                android:textColor="@color/textColour"
+                android:textSize="32sp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/fb_name"
+                android:text="Telephone:"
+                android:textColor="@color/textColour"
+                android:textSize="28sp" />
+
+            <EditText
+                android:id="@+id/fb_tel_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/textView2"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/rect_text_edit_border"
+                android:ems="10"
+                android:inputType="phone"
+                android:minHeight="40dp"
+                android:paddingLeft="5dp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/fb_tel_number"
+                android:text="Email:"
+                android:textColor="@color/textColour"
+                android:textSize="28sp" />
+
+            <EditText
+                android:id="@+id/fb_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/textView3"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/rect_text_edit_border"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                android:minHeight="40dp"
+                android:paddingLeft="5dp" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/fb_email"
+                android:text="Comments:"
+                android:textColor="@color/textColour"
+                android:textSize="28sp" />
+
+            <EditText
+                android:id="@+id/fb_comments"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/textView4"
+                android:background="@drawable/rect_text_edit_border"
+                android:ems="10"
+                android:gravity="center_vertical|top"
+                android:inputType="textMultiLine"
+                android:paddingLeft="5dp"
+                android:paddingTop="5dp" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
